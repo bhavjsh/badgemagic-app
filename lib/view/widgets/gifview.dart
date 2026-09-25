@@ -44,7 +44,6 @@ const Map<String, IconData> gifPreviewIcons = {
   'assets/gifs/wave.gif': Icons.waves,
 };
 
-
 class GifAnimationGridView extends StatefulWidget {
   final ScrollController? controller;
   final ValueChanged<String> onGifSelected;

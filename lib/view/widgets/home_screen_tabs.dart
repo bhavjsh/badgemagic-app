@@ -146,18 +146,114 @@ class AnimationGridContent extends StatelessWidget {
             onTap: () => onGifSelected?.call(gif['path']!),
           ),
         ),
-      (l10n.beatingHearts, AniContainer(key: const ValueKey('ani_18'), animation: null, icon: Icons.favorite, animationName: l10n.beatingHearts, index: 18)),
-      (l10n.brokenHearts, AniContainer(key: const ValueKey('ani_12'), animation: null, icon: Icons.heart_broken, animationName: l10n.brokenHearts, index: 12)),
-      (l10n.chevron, AniContainer(key: const ValueKey('ani_10'), animation: null, icon: Icons.chevron_left, animationName: l10n.chevron, index: 10)),
-      (l10n.cupid, AniContainer(key: const ValueKey('ani_13'), animation: null, icon: Icons.favorite_border, animationName: l10n.cupid, index: 13)),
-      (l10n.diagonal, AniContainer(key: const ValueKey('ani_16'), animation: null, icon: Icons.change_history, animationName: l10n.diagonal, index: 16)),
-      (l10n.diamond, AniContainer(key: const ValueKey('ani_11'), animation: null, icon: Icons.diamond, animationName: l10n.diamond, index: 11)),
-      (l10n.emergency, AniContainer(key: const ValueKey('ani_17'), animation: null, icon: Icons.warning, animationName: l10n.emergency, index: 17)),
-      (l10n.equalizer, AniContainer(key: const ValueKey('ani_20'), animation: null, icon: Icons.equalizer, animationName: l10n.equalizer, index: 20)),
-      (l10n.feet, AniContainer(key: const ValueKey('ani_14'), animation: null, icon: Icons.directions_walk, animationName: l10n.feet, index: 14)),
-      (l10n.fireworks, AniContainer(key: const ValueKey('ani_19'), animation: null, icon: Icons.celebration, animationName: l10n.fireworks, index: 19)),
-      (l10n.fishKiss, AniContainer(key: const ValueKey('ani_15'), animation: null, icon: Icons.set_meal, animationName: l10n.fishKiss, index: 15)),
-      (l10n.pacman, AniContainer(key: const ValueKey('ani_9'), animation: null, icon: Icons.sports_esports, animationName: l10n.pacman, index: 9)),
+      (
+        l10n.beatingHearts,
+        AniContainer(
+            key: const ValueKey('ani_18'),
+            animation: null,
+            icon: Icons.favorite,
+            animationName: l10n.beatingHearts,
+            index: 18)
+      ),
+      (
+        l10n.brokenHearts,
+        AniContainer(
+            key: const ValueKey('ani_12'),
+            animation: null,
+            icon: Icons.heart_broken,
+            animationName: l10n.brokenHearts,
+            index: 12)
+      ),
+      (
+        l10n.chevron,
+        AniContainer(
+            key: const ValueKey('ani_10'),
+            animation: null,
+            icon: Icons.chevron_left,
+            animationName: l10n.chevron,
+            index: 10)
+      ),
+      (
+        l10n.cupid,
+        AniContainer(
+            key: const ValueKey('ani_13'),
+            animation: null,
+            icon: Icons.favorite_border,
+            animationName: l10n.cupid,
+            index: 13)
+      ),
+      (
+        l10n.diagonal,
+        AniContainer(
+            key: const ValueKey('ani_16'),
+            animation: null,
+            icon: Icons.change_history,
+            animationName: l10n.diagonal,
+            index: 16)
+      ),
+      (
+        l10n.diamond,
+        AniContainer(
+            key: const ValueKey('ani_11'),
+            animation: null,
+            icon: Icons.diamond,
+            animationName: l10n.diamond,
+            index: 11)
+      ),
+      (
+        l10n.emergency,
+        AniContainer(
+            key: const ValueKey('ani_17'),
+            animation: null,
+            icon: Icons.warning,
+            animationName: l10n.emergency,
+            index: 17)
+      ),
+      (
+        l10n.equalizer,
+        AniContainer(
+            key: const ValueKey('ani_20'),
+            animation: null,
+            icon: Icons.equalizer,
+            animationName: l10n.equalizer,
+            index: 20)
+      ),
+      (
+        l10n.feet,
+        AniContainer(
+            key: const ValueKey('ani_14'),
+            animation: null,
+            icon: Icons.directions_walk,
+            animationName: l10n.feet,
+            index: 14)
+      ),
+      (
+        l10n.fireworks,
+        AniContainer(
+            key: const ValueKey('ani_19'),
+            animation: null,
+            icon: Icons.celebration,
+            animationName: l10n.fireworks,
+            index: 19)
+      ),
+      (
+        l10n.fishKiss,
+        AniContainer(
+            key: const ValueKey('ani_15'),
+            animation: null,
+            icon: Icons.set_meal,
+            animationName: l10n.fishKiss,
+            index: 15)
+      ),
+      (
+        l10n.pacman,
+        AniContainer(
+            key: const ValueKey('ani_9'),
+            animation: null,
+            icon: Icons.sports_esports,
+            animationName: l10n.pacman,
+            index: 9)
+      ),
     ]..sort((a, b) => a.$1.toLowerCase().compareTo(b.$1.toLowerCase()));
 
     return Column(

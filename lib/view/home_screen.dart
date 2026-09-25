@@ -454,7 +454,7 @@ class _HomeScreenState extends State<HomeScreen>
                       builder: (context, animationProvider, _) {
                     final isSpecial =
                         animationProvider.isSpecialAnimationSelected() ||
-                        animationProvider.isGifActive;
+                            animationProvider.isGifActive;
                     return Row(
                       children: [
                         if (!isSpecial) ...[
