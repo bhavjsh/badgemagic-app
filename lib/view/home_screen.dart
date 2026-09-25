@@ -453,7 +453,8 @@ class _HomeScreenState extends State<HomeScreen>
                   final actionButtons = Consumer<AnimationBadgeProvider>(
                       builder: (context, animationProvider, _) {
                     final isSpecial =
-                        animationProvider.isSpecialAnimationSelected();
+                        animationProvider.isSpecialAnimationSelected() ||
+                        animationProvider.isGifActive;
                     return Row(
                       children: [
                         if (!isSpecial) ...[
